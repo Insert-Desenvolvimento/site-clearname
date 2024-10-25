@@ -216,7 +216,7 @@ a.secondary {
 }
 
 .mainContent {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #00061B;
 }
 
@@ -226,7 +226,7 @@ a.secondary {
 
 .about {
   width: 100%;
-  height: 50%;
+  height: 50vh;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -235,9 +235,14 @@ a.secondary {
 }
 
 .services {
-  background-color: #FFFFFF;
+  background-color: #F1F1F1F1;
   width: 100%;
-  height: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .textAbout {
@@ -247,4 +252,220 @@ a.secondary {
   text-align: left;
   width: 50%;
   height: 100%;
+}
+
+.listAtractive {
+  color: #00061B;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: 0 auto;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.evidence {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cardContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.servicesTitle {
+  color: #00061B;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 28px;
+}
+
+.listBullet {
+  text-align: center;
+}
+
+.group {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #00061B;
+}
+
+.perfilImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contentGroup {
+  width: 100%;
+  max-width: 1200px;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.textGroup {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 20px;
+
+}
+
+.imgItem {
+  border-radius: 4px;
+}
+
+.imgText {
+  width: 250px;
+  padding: 10px 0;
+  font-weight: 700;
+}
+
+.otherGroups {
+  height: 400px;
+  background-color: #00061B;
+  padding: 20px;
+}
+
+.specialist {
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.listSpecialist {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.specialistSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.cardSpecialist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 250px;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.sectionForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50vh;
+}
+
+.textElement {
+  width: 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.sectionFormContainer {
+  width: 100%;
+  background-color: #f1f1f1;
+  color: #00061B;
+}
+
+.containerEbook {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  background-color: #000105;
+  margin-top: 10px;
+}
+
+.containerSquare {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.squareElement {
+  border: 1px solid transparent;
+  border-image: linear-gradient(80deg, #D4AF37, transparent) 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  animation: pulsar 3s ease-in-out infinite;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.checkelement {
+  margin: 5px;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+  }
+
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 7px rgba(212, 175, 55, 0.6);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+  }
 }

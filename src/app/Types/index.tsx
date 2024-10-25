@@ -3,6 +3,10 @@ export interface MenuProps {
     link: string,
 }
 
+export interface Text {
+    text: string,
+}
+
 export interface MenuListItens {
     menuItens: MenuProps[]
 }
