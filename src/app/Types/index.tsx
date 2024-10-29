@@ -5,6 +5,8 @@ export interface MenuProps {
 
 export interface Text {
     text: string,
+    icon: string,
+    paragraph: string,
 }
 
 export interface MenuListItens {
