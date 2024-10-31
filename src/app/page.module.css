@@ -328,6 +328,10 @@ a.secondary {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 7px 6px 5px -6px rgba(212, 175, 55, 0.5);
+
 }
 
 .contentGroup {
@@ -369,8 +373,10 @@ a.secondary {
   border-radius: 20px;
   margin: 20px;
   object-fit: cover;
-
+  border-radius: 50%;
 }
+
+
 
 .listSpecialist {
   display: flex;
@@ -386,6 +392,7 @@ a.secondary {
   align-items: center;
   justify-content: space-evenly;
   padding: 10px;
+  height: 50vh;
 }
 
 .cardSpecialist {
@@ -394,9 +401,13 @@ a.secondary {
   align-items: center;
   justify-content: space-evenly;
   max-width: 250px;
-  text-align: justify;
   font-size: 12px;
   line-height: 20px;
+}
+
+.cardSpecialist p {
+  width: 60%;
+  text-align: center;
 }
 
 .sectionForm {
@@ -429,9 +440,13 @@ a.secondary {
   height: 50vh;
   display: flex;
   align-items: center;
-  background-color: #000105;
+  background-color: rgba(0, 6, 27, 0.5);
+  backdrop-filter: blur(10px) saturate(180%);
   margin-top: 10px;
+  border-radius: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 
 .containerSquare {
   display: flex;
@@ -457,7 +472,6 @@ a.secondary {
 
 .textContainer {
   display: flex;
-  flex-direction: column;
   width: 50%;
   align-items: flex-start;
   justify-content: space-between;
@@ -487,6 +501,13 @@ a.secondary {
   gap: 10px;
 }
 
+.textCreditContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: space-between;
+  height: 100%;
+}
 
 @keyframes pulsar {
   0% {
