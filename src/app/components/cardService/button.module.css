@@ -19,7 +19,7 @@
     font-size: 12px;
     text-align: left;
     padding: 0px 10px;
-    line-height: 15px;
+    line-height: 20px;
 }
 
 .textElement {
@@ -39,7 +39,6 @@
 }
 
 #title {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 900;
 }
-
-.iconElement {}

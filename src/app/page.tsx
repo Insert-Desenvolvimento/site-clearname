@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Header from "@/app/components/header";
 import styles from "./page.module.css";
 import Button from "./components/button";
@@ -19,9 +19,74 @@ import consult from "/public/consult.svg";
 import imgEbook from "/public/ebook.png"
 import Whatsapp from "./components/Whatsapp";
 
+
+
+interface Counts {
+  clientes: number;
+  cidades: number;
+  consultores: number;
+  reducao: number;
+}
+
+
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
   const [isAgreed, setIsAgreed] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+
+  const [counts, setCounts] = useState<Counts>({
+    clientes: 0,
+    cidades: 0,
+    consultores: 0,
+    reducao: 0,
+  });
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.5 } // Ativa quando 50% do elemento está visível
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      const targetCounts: Counts = {
+        clientes: 500,
+        cidades: 35,
+        consultores: 100,
+        reducao: 70,
+      };
+
+      const incrementCounts = () => {
+        setCounts((prevCounts) => {
+          const newCounts = { ...prevCounts };
+          (Object.keys(targetCounts) as (keyof Counts)[]).forEach((key) => {
+            if (prevCounts[key] < targetCounts[key]) {
+              newCounts[key] = Math.min(prevCounts[key] + 1, targetCounts[key]);
+            }
+          });
+          return newCounts;
+        });
+      };
+
+      const interval = setInterval(incrementCounts, 5); // Ajuste o intervalo para controlar a velocidade
+      return () => clearInterval(interval);
+    }
+  }, [isVisible]);
+
 
   useEffect(() => {
     setIsClient(true);
@@ -37,11 +102,13 @@ export default function Home() {
           { name: "Seja Um Consultor", link: "/work-us" },
           { name: "Fale Conosco", link: "/contact" }
         ]} />
-        <div className={styles.responsiveBox}>
-          <div className={styles.contentBox}>
-            <h1 className={styles.slogan}>Reabilite seu crédito e transforme seu futuro financeiro!</h1>
-            <p className={styles.justifyElement}>Especialistas em transformar sua vida financeira com confiança e segurança.</p>
-            <Button />
+        <div className={styles.contentBanner}>
+          <div className={styles.responsiveBox}>
+            <div className={styles.contentBox}>
+              <h1 className={styles.slogan}>Reabilite seu crédito e transforme seu futuro financeiro!</h1>
+              <p className={styles.justifyElement}>Especialistas em transformar sua vida financeira com confiança e segurança.</p>
+              <Button />
+            </div>
           </div>
         </div>
       </header>
@@ -80,18 +147,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.group}>
+        <section className={styles.group} ref={sectionRef}>
           <div className={styles.contentGroup}>
             {isClient && (
               <div className={styles.perfilImg}>
                 <Image className={styles.imgItem} src={nayharaImg} alt="Nayhara Soares posando para foto de perfil" height={400} width={400} />
                 <p className={styles.imgText}>Nayhara Soares - CEO</p>
-                <ul className={styles.listAtractive}>
-                  <li className={styles.listBullet}><span className={styles.evidence}>+1000 <br /></span>Clientes</li>
-                  <li className={styles.listBullet}><span className={styles.evidence}>+35 <br /></span>Cidades</li>
-                  <li className={styles.listBullet}><span className={styles.evidence}>+100</span> <br />Consultores</li>
-                  <li className={styles.listBullet}><span className={styles.evidence}>+70% <br /></span>De Redução</li>
-                </ul>
               </div>
             )}
             <div className={styles.textGroup}>
@@ -101,6 +162,12 @@ export default function Home() {
               <Button />
             </div>
           </div>
+          <ul className={styles.listAtractive}>
+            <li className={styles.listBullet}><span className={styles.evidence}>+{counts.clientes} <br /></span>Clientes</li>
+            <li className={styles.listBullet}><span className={styles.evidence}>+{counts.cidades} <br /></span>Cidades</li>
+            <li className={styles.listBullet}><span className={styles.evidence}>+{counts.consultores}</span> <br />Consultores</li>
+            <li className={styles.listBullet}><span className={styles.evidence}>+{counts.reducao}% <br /></span>De Redução</li>
+          </ul>
         </section>
 
         <div className={styles.specialistSection}>

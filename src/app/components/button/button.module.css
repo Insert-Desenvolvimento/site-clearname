@@ -1,8 +1,8 @@
 .button {
     background: linear-gradient(90deg, rgba(249, 218, 123, 1), rgba(205, 140, 31, 1));
     background-size: 200% 200%;
-    width: 150px;
-    height: 30px;
+    width: 250px;
+    height: 40px;
     border-radius: 4px;
     display: flex;
     align-items: center;
