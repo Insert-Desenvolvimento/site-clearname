@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import nayharaImg from "/public/nayhara-fundo-preto.jpeg";
 import mateus from "/public/matheus.jpg";
 import irmao from "/public/irmao.jpg";
