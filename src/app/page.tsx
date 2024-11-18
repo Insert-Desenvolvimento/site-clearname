@@ -1,7 +1,6 @@
 "use client";
 import Header from "@/app/components/header";
 import styles from "./page.module.css";
-import Button from "./components/button";
 import Whatsapp from "./components/Whatsapp";
 import Banner from "./components/banner";
 import Services from "./components/services";
