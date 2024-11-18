@@ -1,0 +1,44 @@
+.text-speacilist{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+.specialist {
+    border-radius: 20px;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .listSpecialist {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  
+  .specialistSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    height: 50vh;
+  }
+  
+  .cardSpecialist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 250px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .cardSpecialist p {
+    width: 60%;
+    text-align: center;
+  }

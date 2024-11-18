@@ -12,3 +12,8 @@ export interface Text {
 export interface MenuListItens {
     menuItens: MenuProps[]
 }
+
+export interface ButtonEvent {
+    router: string,
+    name: string
+}
