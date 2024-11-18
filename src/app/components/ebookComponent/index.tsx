@@ -18,15 +18,15 @@ export default function EbookComponent() {
                 seus hábitos financeiros e oferecemos um plano personalizado
                 para melhorar sua reputação junto às instituições financeiras.
               </p>
-              <p className="contentEbookInfo">
-              <strong>Adquira nosso eBook exclusivo e descubra estratégias eficazes para melhorar sua reputação financeira e conquistar os melhores resultados:</strong>
+              <div className="contentEbookInfo">
+              <h2>Adquira nosso eBook exclusivo e descubra estratégias eficazes para melhorar sua reputação financeira e conquistar os melhores resultados:</h2>
               <ul>
                 <li><strong>Análise personalizada:</strong> Avaliamos seus hábitos financeiros e indicamos pontos de melhoria.</li>
                 <li><strong>Estratégias comprovadas:</strong> Conheça táticas para aumentar seu score e rating bancário de forma prática.</li>
                 <li><strong>Plano de ação personalizado:</strong> Receba um passo a passo para melhorar suas chances de crédito.</li>
               </ul>
               <strong>Adquira agora o seu eBook e comece a transformar sua vida financeira!</strong>
-              </p>
+              </div>
               <div className="containerButtonEbook">
               <Button router={"ebook"} name={"Compre"} />
               </div>
