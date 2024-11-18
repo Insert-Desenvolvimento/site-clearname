@@ -9,6 +9,7 @@ import About from "./components/about";
 import Group from "./components/group";
 import Specialist from "./components/specialists";
 import EbookComponent from "./components/ebookComponent";
+import Analises from "./components/analisesComponent";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
             { name: "Serviços", link: "/services" },
             { name: "Seja Um Consultor", link: "/work-us" },
             { name: "Fale Conosco", link: "/contact" },
+            { name: "Apoio Social", link: "/social" },
           ]}
         />
         <Banner />
@@ -32,12 +34,7 @@ export default function Home() {
         <Group />
         <Specialist />
         <EbookComponent/>
-
-        
-
-        <div className={styles.sectionFormContainer}>
-          <Button router={"analitic"} name={"Faça uma Análise"} />
-        </div>
+        <Analises/>
       </main>
       <Whatsapp />
     </>

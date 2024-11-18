@@ -1,0 +1,42 @@
+.containerAnalises{
+    background-color: rgba(0, 6, 27, 0.9);
+    width: 100%;
+    min-height: 500px;
+    padding: 10px;
+}
+
+.contentElement{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contentText{
+    display: flex;
+    color: #f1f1f1;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 28px;
+    p{
+        font-size: 20px;
+    }
+    ul{
+        list-style-type: circle;
+        font-size: 16px;
+        padding: 10px;
+        li{
+            margin: 10px;
+        }
+    }
+}
+.focus{
+    color:#D4AF37 ;
+}
+.listBenefits{
+    h2{
+        font-size: 24px;
+    }
+}

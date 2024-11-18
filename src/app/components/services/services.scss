@@ -2,15 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    gap: 10px;
     align-items: center;
-    justify-content: space-between;
+    margin: 20px auto;
 }
 
 .containerServices{
   width: 100%;
   max-width: 1200px;
-  height: 100vh;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
@@ -19,4 +17,8 @@
 
 .textTitleElement{
   color: #f1f1f1;
+  p{
+    font-size: 22px;
+    margin-top: 10px;
+  }
 }
