@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from "./button.module.css"
 import { ButtonEvent } from '@/app/Types';
 import Link from 'next/link';
 import "./button.scss"
