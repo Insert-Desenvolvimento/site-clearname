@@ -3,17 +3,17 @@ import logo from "/public/logo.png"
 import Image from 'next/image';
 import { MenuListItens } from '@/app/Types';
 import Link from 'next/link';
-import styles from "./header.module.css"
+import "./header.scss"
 
 
 const Header = ({ menuItens }: MenuListItens) => {
     return (
-        <div className={styles.headerMenu}>
-            <div className={styles.imglogo}>
+        <div className="headerMenu">
+            <div className="imglogo">
                 <Image src={logo} alt="Logo" width={50} height={50} />
             </div>
             <div>
-                <ul className={styles.headerList}>
+                <ul className="headerList">
                     {
                         menuItens?.map((item, index) => (
                             <li key={index}>
@@ -23,7 +23,7 @@ const Header = ({ menuItens }: MenuListItens) => {
                     }
                 </ul>
             </div>
-            <div className={styles.clientArea}>
+            <div className="clientArea">
                 <p>Área do Cliente</p>
             </div>
         </div>

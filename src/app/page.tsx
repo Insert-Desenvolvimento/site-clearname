@@ -24,6 +24,7 @@ import Services from "./components/services";
 import About from "./components/about";
 import Group from "./components/group";
 import Specialist from "./components/specialists";
+import EbookComponent from "./components/ebookComponent";
 
 interface Counts {
   clientes: number;
@@ -112,25 +113,9 @@ export default function Home() {
         <About />
         <Group />
         <Specialist />
+        <EbookComponent/>
 
-        <div className={styles.containerEbook}>
-          <div className={styles.containerSquare}>
-            <div className={styles.squareElement}>
-              <h1>Quer aprender a Aumentar seu Score?</h1>
-            </div>
-            <div className={styles.textContainer}>
-              <div className={styles.textCreditContainer}>
-                <h2>E-Book</h2>
-                <p>
-                  Descubra por meio de nosso Ebook as melhores técnicas para ter
-                  um score alto e de qualidade. Permita-se a ter crédito....
-                </p>
-                <Button router={"ebook"} name={"Compre"} />
-              </div>
-            </div>
-            <Image src={imgEbook} alt="Book image" width={200} height={250} />
-          </div>
-        </div>
+        
 
         <div className={styles.sectionFormContainer}>
           <Button router={"analitic"} name={"Faça uma Análise"} />

@@ -28,7 +28,7 @@ export default function Specialist() {
           <Image
             className="specialist"
             src={irmao}
-            alt="Foto do especialista Irmao"
+            alt="Foto do especialista Alex Soares"
             width={150}
             height={150}
           />
@@ -42,7 +42,7 @@ export default function Specialist() {
             width={150}
             height={150}
           />
-          <p>CEO: Nayhara Soares (Três Riosn - RJ)</p>
+          <p>CEO: Nayhara Soares (Três Rios - RJ)</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,80 @@
+.containerEbook {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 6, 27);
+    backdrop-filter: blur(10px) saturate(180%);
+    margin-top: 10px;
+    border-radius: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #f1f1f1;
+  }
+  .contentEbook{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .containerSquare {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+  }
+  
+  .squareElement {
+    border: 1px solid transparent;
+    border-image: linear-gradient(80deg, rgb(212, 175, 55), transparent) 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 350px;
+    text-align: left;
+    flex-direction: column;
+    animation: pulsar 3s ease-in-out infinite;
+    padding: 10px;
+  }
+  .textCreditContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .containerButtonEbook{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contentEbookInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    ul{
+      padding: 10px;
+      gap: 10px;
+      line-height: 20px;
+    }
+  }
+
+  @keyframes pulsar {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+    }
+  
+    50% {
+      transform: scale(1.03);
+      box-shadow: 0 0 7px rgba(212, 175, 55, 0.6);
+    }
+  
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+    }
+  }

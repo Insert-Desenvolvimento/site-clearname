@@ -1,26 +1,23 @@
 import nayharaImg from "/public/nayhara-fundo-preto.jpeg";
-import "./group.scss"
+import "./group.scss";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Button from "../button";
 interface Counts {
-    clientes: number;
-    cidades: number;
-    consultores: number;
-    reducao: number;
-  }
+  clientes: number;
+  cidades: number;
+  consultores: number;
+  reducao: number;
+}
 
 export default function Group() {
-const [isClient, setIsClient] = useState(false);
-const [isVisible, setIsVisible] = useState<boolean>(false);
-const sectionRef = useRef<HTMLDivElement | null>(null);
+  const [isClient, setIsClient] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
 
-
-
-useEffect(() => {
+  useEffect(() => {
     setIsClient(true);
-}, []);
-  
+  }, []);
 
   const [counts, setCounts] = useState<Counts>({
     clientes: 0,
@@ -37,7 +34,7 @@ useEffect(() => {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 } 
+      { threshold: 0.5 }
     );
 
     if (sectionRef.current) {
@@ -73,35 +70,59 @@ useEffect(() => {
     }
   }, [isVisible]);
 
-
-  
-
   return (
     <section className="group" ref={sectionRef}>
-          <div className="contentGroup">
-            {isClient && (
-              <div className="perfilImg">
-                <Image className="imgItem" src={nayharaImg} alt="Nayhara Soares posando para foto de perfil" height={400} width={400} />
-                <p className="imgText">Nayhara Soares - CEO</p>
-              </div>
-            )}
-            <div className="textGroup">
-              <h2>Nayhara Soares - CEO</h2>
-              <p>Hoje, após ajudar inúmeras pessoas a limparem seus nomes e elevarem seus scores, Nayhara tem a certeza de que encontrou seu propósito.</p>
-              <p>Seu trabalho vai além de oferecer consultoria financeira; é sobre transformar vidas, devolver a confiança e permitir que seus clientes voltem a sonhar.</p>
-              <Button router={"analitic"} name={"Contato"}/>
-            </div>
+      <div className="contentGroup">
+        {isClient && (
+          <div className="perfilImg">
+            <Image
+              className="imgItem"
+              src={nayharaImg}
+              alt="Nayhara Soares posando para foto de perfil"
+              height={400}
+              width={400}
+            />
+            <p className="imgText">Nayhara Soares - CEO</p>
           </div>
-          <ul className="listAtractive">
-            <li className="listBullet"><span className="evidence">+{counts.clientes} <br /></span>Clientes</li>
-            <li className="listBullet"><span className="evidence">+{counts.cidades} <br /></span>Cidades</li>
-            <li className="listBullet"><span className="evidence">+{counts.consultores}</span> <br />Consultores</li>
-            <li className="listBullet"><span className="evidence">+{counts.reducao}% <br /></span>De Redução</li>
-          </ul>
-        </section>
-
-  )
+        )}
+        <div className="textGroup">
+          <h2>Nayhara Soares - CEO</h2>
+          <p>
+            Hoje, após ajudar inúmeras pessoas a limparem seus nomes e elevarem
+            seus scores, Nayhara tem a certeza de que encontrou seu propósito.
+          </p>
+          <p>
+            Seu trabalho vai além de oferecer consultoria financeira; é sobre
+            transformar vidas, devolver a confiança e permitir que seus clientes
+            voltem a sonhar.
+          </p>
+          <Button router={"analitic"} name={"Contato"} />
+        </div>
+      </div>
+      <ul className="listAtractive">
+        <li className="listBullet">
+          <span className="evidence">
+            +{counts.clientes} <br />
+          </span>
+          Clientes
+        </li>
+        <li className="listBullet">
+          <span className="evidence">
+            +{counts.cidades} <br />
+          </span>
+          Cidades
+        </li>
+        <li className="listBullet">
+          <span className="evidence">+{counts.consultores}</span> <br />
+          Consultores
+        </li>
+        <li className="listBullet">
+          <span className="evidence">
+            +{counts.reducao}% <br />
+          </span>
+          De Redução
+        </li>
+      </ul>
+    </section>
+  );
 }
-
-
-
