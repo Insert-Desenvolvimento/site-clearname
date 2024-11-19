@@ -25,7 +25,6 @@ export default function EbookComponent() {
                 <li><strong>Estratégias comprovadas:</strong> Conheça táticas para aumentar seu score e rating bancário de forma prática.</li>
                 <li><strong>Plano de ação personalizado:</strong> Receba um passo a passo para melhorar suas chances de crédito.</li>
               </ul>
-              <h3>Adquira agora o seu eBook e comece a transformar sua vida financeira!</h3>
               </div>
               <div className="containerButtonEbook">
               <Button router={"ebook"} name={"Compre"} />

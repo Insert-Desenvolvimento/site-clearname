@@ -71,7 +71,7 @@ export default function Group() {
   }, [isVisible]);
 
   return (
-    <section className="group" ref={sectionRef}>
+    <section className="group" ref={sectionRef} id="group">
       <div className="contentGroup">
         {isClient && (
           <div className="perfilImg">

@@ -1,0 +1,176 @@
+$primary-color: rgb(0, 6, 27);
+$secondary-color: #d4af37;
+$font-family: "Roboto", sans-serif;
+
+.social-container {
+  font-family: $font-family;
+  background-color: #f8f8f8;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header {
+  width: 100%;
+  max-width: 1200px;
+  text-align: left;
+  margin-bottom: 40px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.company-name {
+  font-size: 3rem;
+  color: $primary-color;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: $primary-color;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.commitment-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.commitment-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+.containerGallery{
+    background-color: rgba(0, 6, 27);
+    width: 100%;
+}
+
+.image-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .company-name {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .social-links a {
+    margin: 5px 0;
+  }
+}

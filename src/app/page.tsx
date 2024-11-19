@@ -16,11 +16,11 @@ export default function Home() {
       <header className={styles.headerElements}>
         <Header
           menuItens={[
-            { name: "Home", link: "/home" },
+            { name: "Home", link: "/" },
             { name: "Sobre Nós", link: "#about" },
-            { name: "Serviços", link: "/services" },
-            { name: "Seja Um Consultor", link: "/work-us" },
-            { name: "Fale Conosco", link: "/contact" },
+            { name: "Serviços", link: "#services" },
+            { name: "Nossa Equipe", link: "#group" },
+            { name: "Análise", link: "#analises" },
             { name: "Apoio Social", link: "/social" },
           ]}
         />

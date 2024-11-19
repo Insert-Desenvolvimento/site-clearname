@@ -6,7 +6,7 @@ import imgElement from "/public/imgSectionAnalises.jpeg";
 
 export default function Analises() {
   return (
-    <div className="containerAnalises">
+    <div className="containerAnalises" id="analises">
       <div className="contentElement">
         <div>
           <Image

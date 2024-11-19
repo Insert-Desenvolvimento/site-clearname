@@ -4,6 +4,24 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+:target {
+  scroll-margin-top: .8em;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+ 
+:target {
+  scroll-margin-top: .8em;
+}
 
 
 ul, ol{
@@ -11,4 +29,11 @@ ul, ol{
 }
 li, li:a, a:link, a:active{
   text-decoration: none;
+}
+
+h2{
+  font-size: 32px;
+}
+p{
+  font-size: 16px;
 }
