@@ -79,14 +79,12 @@ export default function Group() {
               className="imgItem"
               src={nayharaImg}
               alt="Nayhara Soares posando para foto de perfil"
-              height={400}
-              width={400}
             />
-            <p className="imgText">Nayhara Soares - CEO</p>
+            <span className="circleLeft">CEO - Nayhara Soares</span>
           </div>
         )}
         <div className="textGroup">
-          <h2>Nayhara Soares - CEO</h2>
+          <h2>Nayhara Soares</h2>
           <p>
             Hoje, após ajudar inúmeras pessoas a limparem seus nomes e elevarem
             seus scores, Nayhara tem a certeza de que encontrou seu propósito.

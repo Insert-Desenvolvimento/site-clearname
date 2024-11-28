@@ -1,31 +1,55 @@
 .text-speacilist{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     align-items: flex-start;
+    gap: 20px;
+    color: #f1f1f1 ;
+    p{font-size: 1.3rem; 
+    font-weight: 100; 
+    }
+    h2{
+      font-size: 2rem;
+      color: #D4AF37;
+    }
 }
 .specialist {
     border-radius: 20px;
     margin: 20px;
     object-fit: cover;
     border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    background-color: #D4AF37;
   }
   
   .listSpecialist {
     display: flex;
-    width: 100%;
+    width: 50%;
     max-width: 1200px;
+    align-items: center;
     justify-content: space-around;
     margin: 0 auto;
+    height: 100%;
+    flex-direction: column;
+  > div:nth-child(1) {
+      align-self: self-start;
+    }
+    
+    > div:nth-child(2) {
+      align-self: self-end;
+    }
+    
+    > div:nth-child(3) {
+     align-self: flex-start;
+    }
   }
   
   .specialistSection {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 10px;
-    height: 50vh;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -33,15 +57,29 @@
   
   .cardSpecialist {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    max-width: 250px;
     font-size: 12px;
     line-height: 20px;
+    color: #f1f1f1;
   }
   
   .cardSpecialist p {
-    width: 60%;
+    font-size: 16px;
+    position: relative;
     text-align: center;
+    ::before{
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      width: 80%;
+      height: 3px;
+      background-color: #D4AF37 ;
+    }
+  }
+  .container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 6, 27, 0.9);
   }

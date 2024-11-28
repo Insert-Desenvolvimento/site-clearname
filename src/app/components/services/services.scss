@@ -4,6 +4,9 @@
     width: 100%;
     align-items: center;
     margin: 20px auto;
+    @media (max-width:1000px ){
+      justify-content: space-between;
+    }
 }
 
 .containerServices{

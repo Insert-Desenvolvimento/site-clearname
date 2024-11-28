@@ -39,14 +39,56 @@
   
   .slogan {
     font-size: 48px;
-    color: rgba(0, 6, 27);
+    font-weight: 600;
+    color: #f1f1f1;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
   }
+  
+  .slogan::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #D4AF37;
+    width: 0; /* Começa oculto */
+    white-space: nowrap; /* Garante que o texto não quebre */
+    overflow: hidden;
+    border-right: 2px solid #D4AF37; /* Simula um cursor */
+    animation: typing 6s steps(30, end) infinite, blink 1s step-end infinite;
+    @media (max-width: 1000px) {
+      display: none;
+      
+    }
+  }
+  
+  /* Animação para "escrever" */
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50%, 90% {
+      width: 100%; /* Preenche todo o texto */
+    }
+    100%, 50% {
+      width: 0; /* Volta ao início para repetir */
+    }
+  }
+  
+  /* Piscar do cursor */
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  
   
   .justifyElement {
     font-size: 22px;
-    width: 40%;
+    width: 100%;
     color: #fff;
-    font-weight: thin;
+    font-weight: 100;
+    max-width: 600px;
   }
   
   
@@ -68,4 +110,13 @@
     align-items: center;
     justify-content: center;
   
+  }
+
+  @keyframes animate {
+    0%, 10%, 100% {
+      width: 0;
+    }
+    70%, 90% {
+     width: 100%;
+    }
   }

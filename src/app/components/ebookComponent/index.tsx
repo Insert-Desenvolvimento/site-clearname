@@ -32,7 +32,7 @@ export default function EbookComponent() {
             </div>
           </div>
         </div>
-        <Image src={imgEbook} alt="Book image" width={500} />
+        <Image src={imgEbook} className="imgEbookContainer" alt="Book image" width={500} />
       </div>
     </div>
   );

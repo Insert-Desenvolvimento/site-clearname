@@ -12,6 +12,14 @@
     margin: 0 auto;
     justify-content: space-between;
     gap: 10px;
+    >div{
+        object-fit: cover;
+        img{
+            width: 100%;
+            max-width: 900px;
+            object-fit: cover;
+        }
+    }
 }
 
 .contentText{

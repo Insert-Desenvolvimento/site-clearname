@@ -1,13 +1,14 @@
 .containerEbook {
-    height: 50vh;
     display: flex;
     align-items: center;
     background-color: #f1f1f1;
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
     backdrop-filter: blur(10px) saturate(180%);
-    margin-top: 10px;
     border-radius: 1px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #00061B;
+    padding: 10px;
+    min-height: 50vh;
   }
 
   .containerButtonEbook{
@@ -23,6 +24,7 @@
     width: 100%;
     display: flex;
     margin: 0 auto;
+    align-items: center;
   }
   
   .containerSquare {
@@ -32,7 +34,6 @@
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-    height: 50%;
   }
   
   .squareElement {
@@ -40,7 +41,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    height: 350px;
     text-align: left;
     flex-direction: column;
     animation: pulsar 3s ease-in-out infinite;
