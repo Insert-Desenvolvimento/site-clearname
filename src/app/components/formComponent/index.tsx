@@ -6,7 +6,6 @@ import MaskedInput from 'react-text-mask';
 import "./form.scss"
 import { redirect } from 'next/navigation';
 
-
 interface FormValues {
     name: string;
     cpf: string;
@@ -63,7 +62,7 @@ const handleSubmit = (values: FormValues, { setSubmitting, resetForm }: { setSub
     setTimeout(() => {
         window.open(whatsappUrl, '_blank');
         setSubmitting(false);
-        resetForm(); 
+        resetForm();
         redirect("/")
     }, 400);
 };
@@ -99,7 +98,7 @@ const FormComponent: React.FC = () => {
                         <div className="input">
                             <label htmlFor="cpf">CPF:</label>
                             <Field name="cpf">
-                                {({ field }: { field: any }) => (
+                                {({ field }: { field: { name: string; value: string; onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; onBlur: () => void; } }) => (
                                     <MaskedInput
                                         {...field}
                                         mask={[/\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/, /\d/]}
@@ -118,7 +117,7 @@ const FormComponent: React.FC = () => {
                         <div className="input">
                             <label htmlFor="phone">Celular/Whatsapp:</label>
                             <Field name="phone">
-                                {({ field }: { field: any }) => (
+                                {({ field }: { field: { name: string; value: string; onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; onBlur: () => void; } }) => (
                                     <MaskedInput
                                         {...field}
                                         mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
