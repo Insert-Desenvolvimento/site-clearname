@@ -4,7 +4,6 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import MaskedInput from 'react-text-mask';
 import "./form.scss"
-import styles from "./component.module.css";
 import { redirect } from 'next/navigation';
 
 interface FormValues {
@@ -55,7 +54,7 @@ const generateWhatsAppMessage = (values: FormValues) => {
     return `Novo orçamento recebido:\n\nNome: ${values.name}\nCPF: ${values.cpf}\nIdade: ${values.age}\nTelefone: ${values.phone}\nEmail: ${values.email}\nRenda: ${values.income}\nCidade e Estado: ${values.cityState}\nSituação Empregatícia: ${values.employmentStatus}\nEstá Negativado?: ${values.isNegativado}\nGostaria de negociar dívidas com juros abusivos?: ${values.negotiateDebt}`;
 };
 
-const handleSubmit = (values: FormValues, { setSubmitting, resetForm }: any) => {
+const handleSubmit = (values: FormValues, { setSubmitting, resetForm }: { setSubmitting: (isSubmitting: boolean) => void, resetForm: () => void }) => {
     const message = generateWhatsAppMessage(values);
     const phoneNumber = '553299986585'; 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -89,7 +88,7 @@ const FormComponent: React.FC = () => {
                 validationSchema={validationSchema}
                 onSubmit={(values, { setSubmitting, resetForm }) => handleSubmit(values, { setSubmitting, resetForm })}
             >
-                {({ isSubmitting, values, setFieldValue }) => (
+                {({ isSubmitting, setFieldValue }) => (
                     <Form className="formInputs">
                         <div className="input">
                             <label htmlFor="name">Nome Completo:</label>
