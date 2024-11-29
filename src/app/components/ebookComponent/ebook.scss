@@ -16,6 +16,11 @@
   }
 
   .imgEbookContainer{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
     @media (max-width: 768px) {
       display: none;
     }

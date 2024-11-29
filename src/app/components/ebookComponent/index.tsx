@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../button";
-import imgEbook from "/public/ebook.png";
+import imgEbook from "/public/ebook.jpeg";
 import "./ebook.scss";
 
 export default function EbookComponent() {
@@ -32,7 +32,7 @@ export default function EbookComponent() {
             </div>
           </div>
         </div>
-        <Image src={imgEbook} className="imgEbookContainer" alt="Book image" width={500} />
+        <Image src={imgEbook} className="imgEbookContainer" alt="Book image"  />
       </div>
     </div>
   );
