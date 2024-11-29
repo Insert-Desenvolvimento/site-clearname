@@ -1,11 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import FormComponent from "../components/formComponent";
 import "./analitic.scss";
 import img from "/public/imgForm.jpeg";
 import Image from "next/image";
 export default function Analitic() {
-  const [isAgreed, setIsAgreed] = useState(false);
   return (
     <div className="container">
       <div className="content">

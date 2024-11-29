@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import imgSegredos from "/public/segredosScore.jpeg";
-import whats from "/public/whatsapp.png";
 import "./ebook.scss";
 import { redirect } from "next/navigation";
 
