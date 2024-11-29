@@ -39,7 +39,7 @@
     }
 
     .hamburgerMenu {
-        display: none; // Escondido por padrão
+        display: none; 
         cursor: pointer;
 
         .hamburgerButton {
@@ -58,7 +58,7 @@
         }
 
         .headerListMobile {
-            display: none; // Escondido inicialmente
+            display: none;
             position: absolute;
             top: 60px;
             right: 20px;
@@ -81,7 +81,7 @@
 
         &.show {
             .headerListMobile {
-                display: flex; // Mostra o menu de hambúrguer
+                display: flex; 
             }
         }
     }
@@ -116,15 +116,14 @@
     }
 }
 
-/* Responsividade */
 @media (max-width: 926px) {
     .headerMenu {
         .headerList {
-            display: none; // Esconde o menu em telas menores
+            display: none; 
         }
 
         .hamburgerMenu {
-            display: flex; // Mostra o botão de hambúrguer
+            display: flex; 
         }
     }
 }
@@ -132,11 +131,11 @@
 @media (min-width: 927px) {
     .headerMenu {
         .headerList {
-            display: flex; // Mostra o menu completo
+            display: flex; 
         }
 
         .hamburgerMenu {
-            display: none; // Esconde o botão de hambúrguer
+            display: none;
         }
     }
 }

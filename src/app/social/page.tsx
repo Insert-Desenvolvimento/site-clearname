@@ -1,10 +1,9 @@
-'use client'; // Indica que o componente é renderizado no cliente
+'use client'; 
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image'; // Importando o componente Image do Next.js
+import Image from 'next/image'; 
 import './social.scss';
 
-// Importando as imagens diretamente
 import img1 from '/public/social/img1.jpeg';
 import img2 from '/public/social/img2.jpeg';
 import img3 from '/public/social/img3.jpeg';
@@ -45,10 +44,9 @@ const Social = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
-  // Auto-advance slides
   useEffect(() => {
-    const interval = setInterval(nextSlide, 2500); // 2.5 segundos para transição automática
-    return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
+    const interval = setInterval(nextSlide, 2500); 
+    return () => clearInterval(interval); 
   }, []);
 
   return (

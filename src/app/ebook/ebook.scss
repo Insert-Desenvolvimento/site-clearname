@@ -32,10 +32,6 @@
     img{
         width: 400px;
         object-fit: contain;
-        @media (max-width:768px) {
-            display:none ;
-            
-        }
     }
     button{
         height: 30px;
