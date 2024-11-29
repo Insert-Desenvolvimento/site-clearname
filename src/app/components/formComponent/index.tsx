@@ -6,6 +6,7 @@ import MaskedInput from 'react-text-mask';
 import "./form.scss"
 import { redirect } from 'next/navigation';
 
+
 interface FormValues {
     name: string;
     cpf: string;
@@ -56,13 +57,13 @@ const generateWhatsAppMessage = (values: FormValues) => {
 
 const handleSubmit = (values: FormValues, { setSubmitting, resetForm }: { setSubmitting: (isSubmitting: boolean) => void, resetForm: () => void }) => {
     const message = generateWhatsAppMessage(values);
-    const phoneNumber = '553299986585'; 
+    const phoneNumber = '553299986585'; // Substitua pelo número de telefone destinatário
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
     setTimeout(() => {
         window.open(whatsappUrl, '_blank');
         setSubmitting(false);
-        resetForm();
+        resetForm(); 
         redirect("/")
     }, 400);
 };
@@ -86,7 +87,7 @@ const FormComponent: React.FC = () => {
             <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
-                onSubmit={(values, { setSubmitting, resetForm }) => handleSubmit(values, { setSubmitting, resetForm })}
+                onSubmit={handleSubmit}
             >
                 {({ isSubmitting, setFieldValue }) => (
                     <Form className="formInputs">
@@ -98,7 +99,7 @@ const FormComponent: React.FC = () => {
                         <div className="input">
                             <label htmlFor="cpf">CPF:</label>
                             <Field name="cpf">
-                                {({ field }: any) => (
+                                {({ field }: { field: any }) => (
                                     <MaskedInput
                                         {...field}
                                         mask={[/\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/, /\d/]}
@@ -117,7 +118,7 @@ const FormComponent: React.FC = () => {
                         <div className="input">
                             <label htmlFor="phone">Celular/Whatsapp:</label>
                             <Field name="phone">
-                                {({ field }: any) => (
+                                {({ field }: { field: any }) => (
                                     <MaskedInput
                                         {...field}
                                         mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
