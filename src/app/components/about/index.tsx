@@ -21,7 +21,7 @@ useEffect(() => {
       </div>
       {isClient && (
         <div>
-          <Image className="specialist" src={logo} alt="Logo Image" height={300} width={300} />
+          <Image className="logoAbout" src={logo} alt="Logo Image" height={300} width={300} />
         </div>
       )}
     </div>

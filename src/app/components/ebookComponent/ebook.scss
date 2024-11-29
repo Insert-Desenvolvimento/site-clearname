@@ -9,6 +9,16 @@
     color: #00061B;
     padding: 10px;
     min-height: 50vh;
+    overflow: hidden;
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  .imgEbookContainer{
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .containerButtonEbook{
@@ -45,6 +55,21 @@
     flex-direction: column;
     animation: pulsar 3s ease-in-out infinite;
     padding: 10px;
+
+    @media (max-width: 768px) {
+      animation: none;
+      padding: 0;
+      h1{
+        font-size: 1.5rem;
+      }
+      h2{
+        font-size: 1.3rem;
+      }
+      p{
+        font-size: 0.9rem;
+        width: 90%;
+      }
+    }
   }
   .textCreditContainer{
     display: flex;
@@ -62,6 +87,18 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    .button{
+      width: 100%;
+      max-width: 350px;
+      margin: 5px;
+    }
+    a{
+      width: 100%;
+      max-width: 350px;
+    }
+    p{
+      text-align: center ;
+    }
   }
   .contentEbookInfo{
     display: flex;
@@ -73,6 +110,10 @@
       gap: 10px;
       line-height: 20px;
       font-size: 16px;
+      @media (max-width: 768px) {
+        width: 90%;
+        font-size: 0.9rem;
+      }
     }
   }
 

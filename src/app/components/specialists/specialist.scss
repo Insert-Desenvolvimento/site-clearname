@@ -5,6 +5,9 @@
     align-items: flex-start;
     gap: 20px;
     color: #f1f1f1 ;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     p{font-size: 1.3rem; 
     font-weight: 100; 
     }
@@ -21,6 +24,7 @@
     width: 180px;
     height: 180px;
     background-color: #D4AF37;
+    
   }
   
   .listSpecialist {
@@ -32,16 +36,30 @@
     margin: 0 auto;
     height: 100%;
     flex-direction: column;
+    @media (max-width: 768px) {
+      width: 100%;
+      overflow: hidden;
+    }
+    
   > div:nth-child(1) {
       align-self: self-start;
+      @media (max-width: 768px) {
+        align-self: center;
+      }
     }
     
     > div:nth-child(2) {
       align-self: self-end;
+      @media (max-width: 768px) {
+        align-self: center;
+      }
     }
     
     > div:nth-child(3) {
      align-self: flex-start;
+     @media (max-width: 768px) {
+      align-self: center;
+    }
     }
   }
   
@@ -53,6 +71,11 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
   }
   
   .cardSpecialist {
@@ -62,6 +85,12 @@
     font-size: 12px;
     line-height: 20px;
     color: #f1f1f1;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
   }
   
   .cardSpecialist p {

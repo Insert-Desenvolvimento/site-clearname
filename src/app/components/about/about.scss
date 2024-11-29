@@ -16,6 +16,17 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      width: 100%;
+      .textAbout{
+        width: 100%;
+        gap: 20px;
+      }
+      .logoAbout{
+        display: none ;
+      }
+    }
   }
   
   .services {
