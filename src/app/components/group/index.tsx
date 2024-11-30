@@ -3,6 +3,7 @@ import "./group.scss";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Button from "../button";
+
 interface Counts {
   clientes: number;
   cidades: number;
@@ -56,17 +57,35 @@ export default function Group() {
       const incrementCounts = () => {
         setCounts((prevCounts) => {
           const newCounts = { ...prevCounts };
-          (Object.keys(targetCounts) as (keyof Counts)[]).forEach((key) => {
-            if (prevCounts[key] < targetCounts[key]) {
-              newCounts[key] = Math.min(prevCounts[key] + 1, targetCounts[key]);
-            }
-          });
+
+          if (prevCounts.clientes < targetCounts.clientes) {
+            newCounts.clientes = Math.min(prevCounts.clientes + 1, targetCounts.clientes);
+          }
+          if (prevCounts.cidades < targetCounts.cidades) {
+            newCounts.cidades = Math.min(prevCounts.cidades + 1, targetCounts.cidades);
+          }
+          if (prevCounts.consultores < targetCounts.consultores) {
+            newCounts.consultores = Math.min(prevCounts.consultores + 1, targetCounts.consultores);
+          }
+          if (prevCounts.reducao < targetCounts.reducao) {
+            newCounts.reducao = Math.min(prevCounts.reducao + 1, targetCounts.reducao);
+          }
+
           return newCounts;
         });
       };
 
-      const interval = setInterval(incrementCounts, 30);
-      return () => clearInterval(interval);
+      const clientesInterval = setInterval(() => incrementCounts(), 100);
+      const cidadesInterval = setInterval(() => incrementCounts(), 5);
+      const consultoresInterval = setInterval(() => incrementCounts(), 100);
+      const reducaoInterval = setInterval(() => incrementCounts(), 100);
+
+      return () => {
+        clearInterval(clientesInterval);
+        clearInterval(cidadesInterval);
+        clearInterval(consultoresInterval);
+        clearInterval(reducaoInterval);
+      };
     }
   }, [isVisible]);
 
