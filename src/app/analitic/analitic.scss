@@ -17,12 +17,17 @@
     @media (max-width: 1000px) {
         justify-content: center;
         align-items: center;
+        margin: 0;
     }
     >div{
         width: 50%;
     }
     .containerRight{
         width: 70%;
+        @media (max-width: 1000px) {
+            width: 100%;
+            margin: 10px;
+        }
         form{
             width: 100%;
             gap: 7px;
@@ -41,7 +46,7 @@
                     border-radius: 4px;
                     border: none;
                     padding: 10px;
-                    min-width: 300px;
+                    min-width: 150px;
                 }
             }
             button{

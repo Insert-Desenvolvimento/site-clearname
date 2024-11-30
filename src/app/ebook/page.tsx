@@ -15,7 +15,7 @@ export default function Ebook() {
     <div className="container">
       <main>
         <div className="contentBannerEbook">
-          <div className="textLeft">
+          <div className="textLeftEbook">
             <div className="btnReturn" onClick={() => redirect("/")}>Retornar a Página Principal</div>
             <h1>
               <span className="textOverlay">

@@ -35,6 +35,10 @@
     height: 500px;
     width: 70%;
     text-align: center;
+    @media (max-width: 568px) {
+      width: 100%;
+      padding: 10px;
+    }
   }
   
   .slogan {
@@ -44,16 +48,25 @@
     position: relative;
     display: inline-block;
     overflow: hidden;
+    @media (max-width: 1000px) {
+      font-size: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+    @media (max-width: 568px) {
+      font-size: 1.1rem;
+    }
   }
   
   .slogan::before {
     content: attr(data-text);
     position: absolute;
     color: #D4AF37;
-    width: 0; /* Começa oculto */
-    white-space: nowrap; /* Garante que o texto não quebre */
+    width: 0; 
+    white-space: nowrap; 
     overflow: hidden;
-    border-right: 2px solid #D4AF37; /* Simula um cursor */
+    border-right: 2px solid #D4AF37; 
     animation: typing 6s steps(30, end) infinite, blink 1s step-end infinite;
     @media (max-width: 1000px) {
       display: none;
@@ -61,20 +74,20 @@
     }
   }
   
-  /* Animação para "escrever" */
+  
   @keyframes typing {
     0% {
       width: 0;
     }
     50%, 90% {
-      width: 100%; /* Preenche todo o texto */
+      width: 100%; 
     }
     100%, 50% {
-      width: 0; /* Volta ao início para repetir */
+      width: 0; 
     }
   }
   
-  /* Piscar do cursor */
+
   @keyframes blink {
     50% {
       border-color: transparent;

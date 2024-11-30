@@ -41,6 +41,9 @@
       border-radius: 50%;
       min-width: 200px;
       min-height: 200px;
+      @media (max-width:568px) {
+        max-height:309px;
+      }
     }
   }
   

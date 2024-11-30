@@ -65,7 +65,7 @@ export default function Group() {
         });
       };
 
-      const interval = setInterval(incrementCounts, 5); // Ajuste o intervalo para controlar a velocidade
+      const interval = setInterval(incrementCounts, 30);
       return () => clearInterval(interval);
     }
   }, [isVisible]);

@@ -56,7 +56,7 @@ const generateWhatsAppMessage = (values: FormValues) => {
 
 const handleSubmit = (values: FormValues, { setSubmitting, resetForm }: { setSubmitting: (isSubmitting: boolean) => void, resetForm: () => void }) => {
     const message = generateWhatsAppMessage(values);
-    const phoneNumber = '553299986585'; // Substitua pelo número de telefone destinatário
+    const phoneNumber = '553299986585'; 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
     setTimeout(() => {
