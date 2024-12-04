@@ -7,6 +7,7 @@ export interface Text {
     text: string,
     icon: string,
     paragraph: string,
+    list: string[]
 }
 
 export interface MenuListItens {

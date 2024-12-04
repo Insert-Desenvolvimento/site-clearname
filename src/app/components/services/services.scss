@@ -8,6 +8,9 @@
     @media (max-width:1000px ){
       justify-content: center;
     }
+    @media (max-width:568px ){
+      gap: 10px;
+    }
 }
 
 .containerServices{
@@ -25,3 +28,4 @@
     margin-top: 10px;
   }
 }
+

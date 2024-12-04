@@ -34,37 +34,23 @@
     object-fit: cover;
     position: relative;
     min-width: 300px;
-    >img{
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    > img {
       width: 100%;
       max-width: 400px;
       max-height: 400px;
       border-radius: 50%;
       min-width: 200px;
       min-height: 200px;
-      @media (max-width:568px) {
-        max-height:309px;
+      @media (max-width: 445px) {
+        max-height: 360px;
+      }
+      @media (max-width: 380px) {
+        max-height: 309px;
       }
     }
-  }
-  
-  .circleLeft {
-    position: absolute;
-    background-color: #D4AF37;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    font-size: 12px;
-    text-align: center;
-    white-space: nowrap;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    color: #f1f1f1;
-    font-weight: bold;
-    font-size: 12px;
   }
   
   .contentGroup {
@@ -85,14 +71,16 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding: 20px;
+    // padding: 20px;
     min-width: 300px;
+    gap: 20px;
     @media (max-width: 768px) {
       width: 100%;
       padding: 0px;
-      gap: 20px;
     }
-  
+    h2, p{
+      padding-left: 20px;
+    }
   }
   
   .textGroup h2 {
@@ -138,4 +126,39 @@
     font-size: 26px;
   }
   
+  .pillarCard {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .pillarCard .ul {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    position: relative;
+    @media (max-width: 768px) {
+      gap: 0;
+      padding: 0;
+      
+    }
+  }
+  
+  .pillarCard .li {
+    width: calc(100% - 50%);
+    min-width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   

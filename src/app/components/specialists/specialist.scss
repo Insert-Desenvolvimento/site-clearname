@@ -5,11 +5,17 @@
     align-items: flex-start;
     gap: 20px;
     color: #f1f1f1 ;
+    p{
+      font-size: 1.3rem;
+      font-weight: 100;
+    }
     @media (max-width: 768px) {
       width: 100%;
-    }
-    p{font-size: 1.3rem; 
-    font-weight: 100; 
+      p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+      }
     }
     h2{
       font-size: 2rem;

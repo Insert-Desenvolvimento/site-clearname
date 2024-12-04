@@ -1,0 +1,33 @@
+.containerCard{
+    min-height: 300px;
+    width: 350px;
+    min-width: 200px;
+    background-color: rgb(0, 6, 27);
+    margin: 5px 0;
+    border-radius: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgbargba(0, 0, 0, .2);
+    mask-image: linear-gradient(to bottom, rgb(0, 0, 0, .9) 50%, rgb(0, 0, 0, .5) 80%, rgba(0,0,0,0.01) 100%);
+    ul{
+        height: 100%;
+        li{
+            margin-bottom: 10px;
+        }
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    div{
+        padding: 10px;
+        gap: 20px;
+        width: 100%;
+        text-align: start;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
