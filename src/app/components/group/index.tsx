@@ -1,4 +1,3 @@
-"use client"
 import nayharaImg from "/public/nayhara-fundo-preto.jpeg";
 import "./group.scss";
 import { useEffect, useRef, useState } from "react";

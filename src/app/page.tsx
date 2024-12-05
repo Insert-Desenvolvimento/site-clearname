@@ -9,6 +9,8 @@ import Group from "./components/group";
 import Specialist from "./components/specialists";
 import EbookComponent from "./components/ebookComponent";
 import Analises from "./components/analisesComponent";
+import Depoiments from "./components/depoiments";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -34,6 +36,8 @@ export default function Home() {
         <Specialist />
         <EbookComponent/>
         <Analises/>
+        <Depoiments/>
+        <Footer/>
       </main>
       <Whatsapp />
     </>

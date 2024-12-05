@@ -13,21 +13,18 @@ export default function EbookComponent() {
             <div className="textCreditContainer">
               <h1>Quer aprender a Aumentar seu Score?</h1>
               <p>
-                Aumente suas chances de aprovação de crédito com nossa
-                consultoria especializada em score e rating bancário. Avaliamos
-                seus hábitos financeiros e oferecemos um plano personalizado
-                para melhorar sua reputação junto às instituições financeiras.
+              Aprenda como destravar e aumentar o seu score com estratégias simples e eficazes!
               </p>
               <div className="contentEbookInfo">
               <h2>Adquira nosso eBook exclusivo e descubra estratégias eficazes</h2>
-              <ul>
-                <li><strong>Análise personalizada:</strong> Avaliamos seus hábitos financeiros e indicamos pontos de melhoria.</li>
-                <li><strong>Estratégias comprovadas:</strong> Conheça táticas para aumentar seu score e rating bancário de forma prática.</li>
-                <li><strong>Plano de ação personalizado:</strong> Receba um passo a passo para melhorar suas chances de crédito.</li>
-              </ul>
+              <p>
+              Ebook Exclusivo: Um guia prático para entender o score, evitar erros e aplicar estratégias comprovadas para aumentá-lo.
+Mentoria Especializada: Aulas online ao vivo, suporte dedicado e acompanhamento contínuo por 90 dias.
+Serviço de Execução Direta: Deixe nossa equipe aplicar as estratégias diretamente nos seus cadastros, garantindo resultados mais rápidos.
+              </p>
               </div>
               <div className="containerButtonEbook">
-              <Button router={"ebook"} name={"Compre"} />
+              <Button router={"ebook"} name={"COMPRE"} />
               </div>
             </div>
           </div>

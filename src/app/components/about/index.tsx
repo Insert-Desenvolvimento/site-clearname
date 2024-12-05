@@ -39,7 +39,7 @@ export default function About() {
         </div>
         {isClient && (
           <div>
-            <Image className="logoAbout" src={logo} alt="Logo Image" height={300} width={300} />
+            <Image className="logoAbout" src={logo} alt="Logo Image" width={300} />
           </div>
         )}
       </div>

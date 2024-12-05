@@ -1,0 +1,59 @@
+.container-all-depoiments {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: left;
+      color: #D4AF37;
+    }
+  }
+  
+  .content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  
+    @media (max-width: 936px) {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .depoiments-splide {
+    width: 100%;
+  
+    .splide__track {
+      display: flex;
+      align-items: center;
+    }
+  
+    .splide__slide {
+      border: none; // Remove a borda do container do slide
+    }
+  }
+  
+  .depoiment-card {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  
+    .depoiment-image {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  

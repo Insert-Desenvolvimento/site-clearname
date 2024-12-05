@@ -32,6 +32,13 @@
     flex-direction: column;
     justify-content: space-between;
     font-size: 28px;
+
+    a{  
+        width: 100%;
+      .button{
+        width: 100%;
+      }
+    }
     p{
         font-size: 20px;
     }

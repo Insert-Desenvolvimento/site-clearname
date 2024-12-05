@@ -1,8 +1,7 @@
-"use client";
 import React from "react";
 import FormComponent from "../components/formComponent";
 import "./analitic.scss";
-import img from "/public/imgForm.jpeg";
+import img from "/public/imgForm.png";
 import Image from "next/image";
 export default function Analitic() {
   return (

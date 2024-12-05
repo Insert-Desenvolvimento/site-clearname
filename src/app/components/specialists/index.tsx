@@ -5,6 +5,7 @@ import mateus from "/public/matheus.jpg";
 import irmao from "/public/irmao.jpg";
 import alissonImg from "/public/alisson.jpg"
 import "./specialist.scss";
+import OtherSpecialist from "../otherSpecialist";
 
 export default function Specialist() {
   return (
@@ -18,6 +19,7 @@ export default function Specialist() {
             processo para que você volte a ter acesso a crédito e novas oportunidades. Confie em
             quem entende e está ao seu lado para recomeçar.
           </p>
+          <OtherSpecialist/>
         </div>
         <div className="listSpecialist">
           <div className="cardSpecialist">
