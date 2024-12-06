@@ -47,8 +47,8 @@ const Header = ({ menuItens }:MenuElements) => {
               <Link href={item.link}>{item.name}</Link>
             </li>
           ))}
-          <div className="clientArea">
-            <p>Área do Cliente</p>
+          <div className="clientArea" onClick={()=> redirect("/analitic")}>
+            <p>Limpe seu Nome</p>
           </div>
         </ul>
       </div>
