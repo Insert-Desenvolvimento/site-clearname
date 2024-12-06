@@ -1,117 +1,209 @@
-.container{
-    background-color: rgba(0, 6, 27);
-    height: 100vh;
-    color: #f1f1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    >main{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-.btnReturn{
-    background-color: #d4af37;
-    padding: 10px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    font-weight: bold;
-    color: rgba(0, 6, 27);
-    cursor: pointer;
-    @media (max-width: 1000px) {
-        max-width: 300px;
-    }
-}
+$primary-color: rgb(0, 6, 27);
+$secondary-color: #d4af37;
+$font-family: "Roboto", sans-serif;
 
-.contentBannerEbook{
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.container {
+  background-color: rgba(0, 6, 27);
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  > main {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    @media (max-width: 1000px) {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    .textLeftEbook{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 70%;
-        @media (max-width: 1000px) {
-            width: 100%;
-            h1{
-                font-size: 1.4rem;
-            }
-        }
-    }
-    img{
-        width: 400px;
-        object-fit: contain;
-        @media (max-width: 900px) {
-            display: none;
-        }
-    }
-    button{
-        height: 30px;
-        border: none;
-        background-color: #d4af37;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    .containerBtnVip{
-        display: flex;
-        justify-content: space-between;
-        height: 30px;
-        width: 100%;
-        align-items: center;
-        
-
-        button{
-            width: 70%;
-            cursor: pointer;
-            font-weight: bold;
-            color: #f1f1f1;
-            font-size: 22px;
-            @media (max-width: 1000px) {
-                width: 100%;
-                height: 40px;
-            }
-        }
-        >img{
-            width: 50px;
-            height: 50px;
-        }
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
-.textOverlay {
-    color: #d4af37;
-    clip-path: inset(0 100% 0 0);
-    animation: rewrite 6s ease-in-out infinite;
-    @media (max-width: 1100px) {
-        animation: none;
-        clip-path: none;
+
+.btnReturn {
+  background-color: #d4af37;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+  color: rgba(0, 6, 27);
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 200px;
+  font-size: 12px;
+}
+
+.contentBannerEbook {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10%;
+}
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+
+    .textLeftEbook h1 {
+      font-size: 1.4rem;
     }
   }
-  
-  @keyframes rewrite {
-    0%, 20% {
-      clip-path: inset(0 100% 0 0);
+
+  .textLeftEbook {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    @media (max-width: 768px) {
+        width: 100%;
     }
-    50%, 80% {
-      clip-path: inset(0 0 0 0);
+
+    h1 {
+      font-size: 2rem;
+      color: #d4af37;
+      text-align: left;
+      @media (max-width: 768px) {
+        font-size: 1.3rem;
     }
-    100% {
-      clip-path: inset(0 0 0 100%);
     }
+  }
+
+  .ebookImgContainer {
+    width: 400px;
+    object-fit: contain;
+    @media (max-width: 568px) {
+        width: 200px;
+    }
+  }
+
+  .containerBtnVip {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+
+    button {
+      width: 70%;
+      cursor: pointer;
+      font-weight: bold;
+      color: #f1f1f1;
+      font-size: 22px;
+      height: 40px;
+      border: none;
+      background-color: #d4af37;
+      border-radius: 4px;
+
+      @media (max-width: 1000px) {
+        width: 100%;
+        height: 40px;
+      }
+    }
+
+    > img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.textOverlay {
+  color: #d4af37;
+  clip-path: inset(0 100% 0 0);
+  animation: rewrite 6s ease-in-out infinite;
+
+  @media (max-width: 1100px) {
+    animation: none;
+    clip-path: none;
+  }
+}
+
+@keyframes rewrite {
+  0%,
+  20% {
+    clip-path: inset(0 100% 0 0);
+  }
+  50%,
+  80% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+.product-section {
+  background-color: rgba(0, 6, 27, 0.9);
+  color: #f1f1f1;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 50vh; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  div{
+    width: 50%;
+    min-width: 300px;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+  }
+
+  .section-title {
+    font-size: 2rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  p,
+  ul {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
+.btn{
+    width: 70%;
+    cursor: pointer;
+    font-weight: bold;
+    color: #f1f1f1;
+    font-size: 22px;
+    height: 40px;
+    border: none;
+    background-color: #d4af37;
+    border-radius: 4px;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      height: 40px;
+    }
+  }
+  .containerBtnVipFooter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

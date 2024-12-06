@@ -40,13 +40,10 @@
     > img {
       width: 100%;
       max-width: 400px;
-      max-height: 400px;
+      max-height: 380px;
       border-radius: 50%;
       min-width: 200px;
       min-height: 200px;
-      @media (max-width: 445px) {
-        max-height: 360px;
-      }
       @media (max-width: 380px) {
         max-height: 309px;
       }
@@ -59,7 +56,6 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 20px;
     @media (max-width: 768px) {
       flex-wrap: wrap;
     }
@@ -73,10 +69,11 @@
     justify-content: space-evenly;
     min-width: 300px;
     gap: 20px;
+    padding-bottom: 10px;
     a{  
         width: 100%;
       .button{
-        width: 100%;
+        width:100%;
       }
     }
     @media (max-width: 768px) {
@@ -137,13 +134,13 @@
     gap: 5px;
     overflow: hidden;
     position: relative;
+    margin: 0 10px;
   }
   
   .pillarCard .ul {
     display: flex;
     gap: 10px;
     padding: 10px;
-    margin: 0;
     list-style: none;
     transition: transform 0.3s ease-in-out;
     width: 100%;

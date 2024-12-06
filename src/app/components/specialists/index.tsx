@@ -32,7 +32,7 @@ export default function Specialist() {
             </div>
             <p>
               <strong>Parceiro Associado:</strong> Mateus Farias
-              <br /> (Mar de Espanha, MG)
+              <br /> (Bicas / Mar de Espanha, MG)
             </p>
           </div>
           <div className="cardSpecialist">
@@ -45,7 +45,7 @@ export default function Specialist() {
             </div>
             <p>
               <strong>Parceiro Associado:</strong> Alex Soares
-              <br /> (Valparaíso de Goiás, GO)
+              <br /> (Valparaíso de Goiás, GO / Distrito Federal - DF)
             </p>
           </div>
           <div className="cardSpecialist">

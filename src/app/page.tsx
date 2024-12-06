@@ -23,7 +23,7 @@ export default function Home() {
             { name: "Serviços", link: "#services" },
             { name: "Nossa Equipe", link: "#group" },
             { name: "Análise", link: "#analises" },
-            { name: "Apoio Social", link: "/social" },
+            { name: "Responsabilidade Social", link: "/social" },
           ]}
         />
         <Banner />

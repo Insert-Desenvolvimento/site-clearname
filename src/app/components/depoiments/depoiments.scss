@@ -1,5 +1,4 @@
 .container-all-depoiments {
-    padding: 20px;
     text-align: left;
     display: flex;
     align-items: center;
@@ -20,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
   
     @media (max-width: 936px) {
       flex-wrap: wrap;

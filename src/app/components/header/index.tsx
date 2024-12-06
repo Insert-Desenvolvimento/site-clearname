@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "./header.scss";
 import { MenuProps } from "@/app/Types";
+import { redirect } from "next/navigation";
 
 interface MenuElements {
     menuItens: MenuProps[]
@@ -19,7 +20,7 @@ const Header = ({ menuItens }:MenuElements) => {
   return (
     <div className="headerMenu">
       <div className="imglogo">
-        <Image src={logo} alt="Logo" width={50} height={50} />
+        <Image src={logo} alt="Logo" width={50} />
       </div>
       <ul className="headerList">
         {menuItens?.map((item, index) => (
@@ -27,8 +28,8 @@ const Header = ({ menuItens }:MenuElements) => {
             <Link href={item.link}>{item.name}</Link>
           </li>
         ))}
-        <div className="clientArea">
-          <p>Área do Cliente</p>
+        <div className="clientArea" onClick={()=> redirect("/analitic")}>
+          <p>Limpe seu Nome</p>
         </div>
       </ul>
       <div
