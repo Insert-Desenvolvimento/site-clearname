@@ -7,11 +7,11 @@
     border-radius: 1px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #00061B;
-    padding: 10px;
-    min-height: 50vh;
+    padding: 10px 0;
     overflow: hidden;
     @media (max-width: 768px) {
       padding: 0;
+      
     }
   }
 
@@ -63,7 +63,7 @@
 
     @media (max-width: 768px) {
       animation: none;
-      padding: 0;
+      padding: 10px;
       h1{
         font-size: 1.5rem;
       }
@@ -73,18 +73,27 @@
       p{
         font-size: 0.9rem;
         width: 90%;
+        @media (max-width: 768px) {
+          width: 100%;
+          text-align: justify;
+        } 
       }
     }
   }
-  .textCreditContainer{
+  .textCreditContainerScore{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    padding: 10px;
+    line-height: 20px;
+    width: 100%;
+    gap: 20px;
   }
 
-  .textCreditContainer p{
-    padding: 10px;
+  .textCreditContainerScore> p{
+    width: 100%;
+    padding: 10px 0;
   }
 
   .containerButtonEbook{
@@ -93,11 +102,11 @@
     align-items: center;
     justify-content: flex-start;
     .button{
-      width:95%;
+      width:100%;
       margin: 5px;
     }
     a{
-      width: 100%;
+      width: 98%;
     }
     p{
       text-align: center ;

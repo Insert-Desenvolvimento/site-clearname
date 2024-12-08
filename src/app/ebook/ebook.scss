@@ -20,18 +20,17 @@ $font-family: "Roboto", sans-serif;
 }
 
 .btnReturn {
-  background-color: #d4af37;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
   font-weight: bold;
-  color: rgba(0, 6, 27);
+  color: #f1f1f1;
   cursor: pointer;
+  text-decoration: underline;
   margin-bottom: 20px;
   width: 200px;
   font-size: 12px;
+  transition: ease-in-out 150ms;
+}
+.btnReturn:hover{
+  color: #d4af37;
 }
 
 .contentBannerEbook {

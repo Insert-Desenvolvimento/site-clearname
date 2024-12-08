@@ -51,9 +51,6 @@
     @media (max-width: 1000px) {
       font-size: 1.5rem;
     }
-    @media (max-width: 768px) {
-      font-size: 1.3rem;
-    }
   }
   
   .slogan::before {
@@ -94,10 +91,10 @@
   
   
   .justifyElement {
-    font-size: 22px;
+    font-size: 18px;
     width: 100%;
     color: #fff;
-    font-weight: 100;
+    font-weight: 400;
     max-width: 600px;
   }
   

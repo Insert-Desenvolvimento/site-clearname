@@ -23,6 +23,7 @@
   
     @media (max-width: 936px) {
       flex-wrap: wrap;
+      text-align: justify;
     }
   }
   
@@ -47,6 +48,9 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    @media (max-width: 480px) {
+      max-width: 100%;
+    }
   
     .depoiment-image {
       border-radius: 10px;

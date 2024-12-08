@@ -1,8 +1,7 @@
 .containerAnalises{
     background-color: rgba(0, 6, 27, 0.9);
     width: 100%;
-    min-height: 500px;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .contentElement{
@@ -32,24 +31,38 @@
     flex-direction: column;
     justify-content: space-between;
     font-size: 28px;
+    @media (max-width: 768px) {
+        text-align: justify;
+    }
 
     a{  
-        width: 100%;
+        width: 98%;
       .button{
         width: 100%;
       }
     }
     p{
         font-size: 20px;
+        padding: 5px;
     }
     ul{
         list-style-type: circle;
         font-size: 16px;
         padding: 10px;
+        @media (max-width: 420px) {
+            padding: 0;
+        }
+        
         li{
             margin: 10px;
         }
     }
+    @media (max-width: 420px) {
+        h2{
+            font-size: 1.1rem;
+       
+    }
+    
 }
 .focus{
     color:#D4AF37 ;
@@ -58,4 +71,4 @@
     h2{
         font-size: 24px;
     }
-}
+} }

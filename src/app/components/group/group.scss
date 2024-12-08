@@ -71,7 +71,10 @@
     gap: 20px;
     padding-bottom: 10px;
     a{  
-        width: 100%;
+      width: 98%;
+      margin: 0 auto;
+      margin-bottom: 5px;
+      
       .button{
         width:100%;
       }
@@ -81,7 +84,9 @@
       padding: 0px;
     }
     h2, p{
-      padding-left: 20px;
+      padding: 10px;
+      text-align: justify;
+      line-height: 25px;
     }
   }
   
