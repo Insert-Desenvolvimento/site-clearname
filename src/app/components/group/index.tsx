@@ -31,7 +31,7 @@ export default function Group() {
             />
           </div>
         )}
-        <div className="textGroup">
+        <div className="textGroup"  >
           <h2>Nayhara Soares</h2>
           <p>
             Nayhara Soares entende as dores do superendividamento e os impactos emocionais

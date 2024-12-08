@@ -79,3 +79,31 @@
     filter: blur(7px);
     z-index: -1; 
   }
+  .fllatech{
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    opacity: 0.9;
+    color: #f8f9fa;
+    a:link, :active, a:visited{
+      color: #f8f9fa;
+    }
+    
+    p{
+      color: #65DC75;
+    }
+    .contact-item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-size: 12px;
+      svg {
+        color: #65DC75 !important;
+      }
+    }
+    .footer-title{
+      font-weight: 100;
+    }
+   
+  }
