@@ -58,7 +58,7 @@ export default function Group() {
               <SplideSlide className="li">
                 <CardAbout cardItem={{
                   title: "Missão",
-                  paragraph: "restabelecer seu acesso ao crédito e oferecer soluções que devolvam a tranquilidade e a confiança necessárias para planejar um futuro melhor. Trabalhamos com dedicação para ajudar pessoas que enfrentam restrições financeiras ou dificuldades em obter crédito, mesmo sem dívidas, a retomarem seu lugar nomercado.",
+                  paragraph: "Restabelecer seu acesso ao crédito e oferecer soluções que devolvam a tranquilidade e a confiança necessárias para planejar um futuro melhor. Trabalhamos com dedicação para ajudar pessoas que enfrentam restrições financeiras ou dificuldades em obter crédito, mesmo sem dívidas, a retomarem seu lugar nomercado.",
                   list: []
                 }} />
               </SplideSlide>

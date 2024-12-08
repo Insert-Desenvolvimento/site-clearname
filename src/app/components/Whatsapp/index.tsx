@@ -11,8 +11,8 @@ const Whatsapp = () => {
       const scrollPosition = window.scrollY + window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
-      if (scrollPosition >= documentHeight - 100) {
-        setBottomOffset(scrollPosition - documentHeight + 100);
+      if (scrollPosition >= documentHeight - 200) {
+        setBottomOffset(scrollPosition - documentHeight + 200);
       } else {
         setBottomOffset(20);
       }

@@ -10,13 +10,14 @@ export default function EbookComponent() {
       <div className="contentEbook">
         <div className="containerSquare">
           <div className="squareElement">
-            <div className="textCreditContainer">
+            <div className="textCreditContainerScore">
               <h1>Quer aprender a Aumentar seu Score?</h1>
               <p>
               Aprenda como destravar e aumentar o seu score com estratégias simples e eficazes!
               </p>
               <div className="contentEbookInfo">
               <h2>Adquira nosso eBook exclusivo e descubra estratégias eficazes</h2>
+              <br/>
               <p>
               Ebook Exclusivo: Um guia prático para entender o score, evitar erros e aplicar estratégias comprovadas para aumentá-lo.
 Mentoria Especializada: Aulas online ao vivo, suporte dedicado e acompanhamento contínuo por 90 dias.
