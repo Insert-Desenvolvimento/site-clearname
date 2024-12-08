@@ -10,11 +10,11 @@
    img {
      margin: 0;
      padding: 0;
-     width: 180px;
+     width: 150px;
      animation: pulse 2s infinite;
  
      @media (max-width: 778px) {
-       width: 120px;
+       width: 100px;
      }
    }
  

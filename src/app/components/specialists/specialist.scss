@@ -107,7 +107,8 @@
   .cardSpecialist {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 20px;
     font-size: 12px;
     line-height: 20px;
     color: #f1f1f1;
