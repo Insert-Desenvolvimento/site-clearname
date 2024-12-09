@@ -7,10 +7,10 @@ import { MenuProps } from "@/app/Types";
 import { redirect } from "next/navigation";
 
 interface MenuElements {
-    menuItens: MenuProps[]
+  menuItens: MenuProps[];
 }
 
-const Header = ({ menuItens }:MenuElements) => {
+const Header = ({ menuItens }: MenuElements) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -28,9 +28,14 @@ const Header = ({ menuItens }:MenuElements) => {
             <Link href={item.link}>{item.name}</Link>
           </li>
         ))}
-        <div className="clientArea" onClick={()=> redirect("/analitic")}>
-          <p>Limpe seu Nome</p>
-        </div>
+        <div
+            className="clientArea"
+            onClick={() =>
+              window.open(window.location.origin + "/analitic", "_blank")
+            }
+          >
+            <p>Limpe seu Nome</p>
+          </div>
       </ul>
       <div
         className={`hamburgerMenu ${isMenuOpen ? "show" : ""}`}
@@ -47,7 +52,12 @@ const Header = ({ menuItens }:MenuElements) => {
               <Link href={item.link}>{item.name}</Link>
             </li>
           ))}
-          <div className="clientArea" onClick={()=> redirect("/analitic")}>
+          <div
+            className="clientArea"
+            onClick={() =>
+              window.open(window.location.origin + "/analitic", "_blank")
+            }
+          >
             <p>Limpe seu Nome</p>
           </div>
         </ul>

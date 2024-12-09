@@ -14,12 +14,12 @@ import "./other.scss"
 
 const OtherSpecialist: React.FC = () => {
   const specialists = [
-    { name: 'Renato', position: 'Consultor(a)', image: renato },
-    { name: 'Luana', position: 'Brand Manager & Web Designer', image: luana },
-    { name: 'Fernanda', position: 'Consultor(a)', image: fernanda },
-    { name: 'Rosemary', position: 'Consultor(a)', image: rosemary },
-    { name: 'Roney', position: 'Consultor(a)', image: roney },
-    { name: 'Alessandra', position: 'Consultor(a)', image: alessandra },
+    { name: 'Renato Junio', city:'Mar de Espanha e Senador Cortes/MG' ,  position: 'Consultor(a)', image: renato },
+    { name: 'Luana Melo', city: 'Mar de Espanha-MG', position: 'Brand Manager & Web Designer', image: luana },
+    { name: 'Fernanda Magalhães', city: 'Mar de Espanha e Santana do Deserto-MG', position: 'Consultor(a)', image: fernanda },
+    { name: 'Rosemary Carvalho', city: 'Curvelo/MG', position: 'Consultor(a)', image: rosemary },
+    { name: 'Roney Montan', city: 'Governador Valadares/MG', position: 'Consultor(a)', image: roney },
+    { name: 'Alessandra Wildberger', city: 'Mar de Espanha e Juiz de Fora/MG', position: 'Consultor(a)', image: alessandra },
   ];
 
   return (
@@ -50,6 +50,7 @@ const OtherSpecialist: React.FC = () => {
               <Image src={specialist.image} alt={specialist.name} />
               <div className="caption">
                 <h4>{specialist.name}</h4>
+                <p>{specialist.city}</p>
                 <p>{specialist.position}</p>
               </div>
             </div>

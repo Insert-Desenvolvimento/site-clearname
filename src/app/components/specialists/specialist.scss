@@ -28,16 +28,16 @@
 }
 .specialist {
     border-radius: 20px;
-    margin: 15px;
+    margin: 5px;
     object-fit: cover;
     border-radius: 50%;
     width: 140px;
     height: 140px;
     background-color: #D4AF37;
     @media (max-width:768px) {
-      min-width: 140px;
-      min-height: 140px;
-      margin: 10%;
+      min-width: 200px;
+      min-height: 200px;
+      margin: 3px;
     }
     
   }
@@ -133,6 +133,9 @@
       width: 80%;
       height: 3px;
       background-color: #D4AF37 ;
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
   .container{

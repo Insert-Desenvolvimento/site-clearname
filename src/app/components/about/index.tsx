@@ -38,7 +38,7 @@ export default function About() {
 
         </div>
         {isClient && (
-          <div>
+          <div className="imageAboutContainer">
             <Image className="logoAbout" src={logo} alt="Logo Image" width={300} />
           </div>
         )}

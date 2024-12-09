@@ -43,7 +43,7 @@ const Social: React.FC = () => {
       <Image src={logo} alt="Logo Nayhara Soares" width={200} className="logo" />
 
       <header className="header">
-        <h1 className="company-name">Nayhara Soares</h1>
+        <h1 className="company-name">Nayhara Soares Reabilitação de crédito </h1>
         <p className="tagline">Ao utilizar nossos serviços, você também está apoiando causas sociais.</p>
       </header>
 
@@ -55,14 +55,6 @@ const Social: React.FC = () => {
           <li>Doação de recursos para ONGs locais</li>
           <li>Apoio a iniciativas artísticas e culturais</li>
         </ul>
-        <p>
-          A Nayhara Soares tem como missão promover ações e iniciativas que contribuam para o
-          desenvolvimento social, fortalecendo comunidades e impactando positivamente o ambiente.
-        </p>
-        <p>
-          Atuamos em diversas áreas, como educação, saúde e inclusão social, com o compromisso
-          de gerar resultados duradouros e efetivos.
-        </p>
       </section>
 
       <div className="containerGallery">

@@ -17,7 +17,7 @@ export default function Analises() {
         </div>
         <div className="contentText">
           <h2>
-          Faça uma <span className="focus">Análise</span> Conosco!
+          Limpe seu <span className="focus">Nome</span> Conosco!
           </h2>
           <p>
             Nós da equipe Nayhara Soares, estamos dispostos a renovar suas

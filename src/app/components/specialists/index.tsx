@@ -71,7 +71,7 @@ export default function Specialist() {
             </div>
             <p>
               <strong>Sócio e Co-fundador:</strong> Alisson Dias
-              <br /> (Mar de Espanha, MG)
+              <br /> (Três Rios - RJ)
             </p>
           </div>
         </div>
