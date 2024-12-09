@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import "./header.scss";
 import { MenuProps } from "@/app/Types";
-import { redirect } from "next/navigation";
 
 interface MenuElements {
   menuItens: MenuProps[];
