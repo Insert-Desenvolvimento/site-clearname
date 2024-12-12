@@ -9,6 +9,7 @@
     cursor: pointer;
     box-shadow: 0 10px 10px rgbargba(0, 0, 0, .2);
     mask-image: linear-gradient(to bottom, rgb(0, 0, 0, .9) 50%, rgb(0, 0, 0, .5) 80%, rgba(0,0,0,0.01) 100%);
+    position: relative;
     ul{
         height: 100%;
         li{
@@ -31,9 +32,15 @@
         font-size: 24px;
     }
     ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin: 0;
         gap: 0;
-        padding: 10px
+        padding: 0 10px;
+        position: absolute;
+        top: 75px;
     }
     p{
         font-size: 0.8rem;

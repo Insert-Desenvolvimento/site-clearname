@@ -79,30 +79,45 @@
     z-index: -1; 
   }
   .fllatech{
-    text-align: center;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
-    background-color: #000;
-    opacity: 0.9;
+    background-color: #060125;
     color: #f8f9fa;
     a:link, :active, a:visited{
       color: #f8f9fa;
     }
     
     p{
-      color: #65DC75;
+      color: #D4AF37;
+      font-size: 12px;
+      font-weight: 500;
     }
     .contact-item{
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 20px;
+      gap: 5px;
       font-size: 12px;
-      svg {
-        color: #65DC75 !important;
-      }
     }
     .footer-title{
       font-weight: 100;
     }
-   
+  }
+
+  .footer-footer{
+    background-color: #060125;
+    font-size: 12px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #f8f9fa;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
