@@ -29,7 +29,7 @@ const Header = ({ menuItens }: MenuElements) => {
         <div
             className="clientArea"
             onClick={() =>
-              window.open(window.location.href + "analitic", "_blank")
+              window.open(window.location.href = "/analitic.html")
             }
           >
             <p>Limpe seu Nome</p>

@@ -4,7 +4,7 @@ import "./button.scss"
 
 const Button = ({ router, name }: ButtonEvent) => {
     const handleClick = () => {
-        window.location.href = `/${router}.html`, "_blank";
+        window.location.href = `/${router}.html`;
     };
 
     return (

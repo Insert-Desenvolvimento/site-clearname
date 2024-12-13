@@ -1,3 +1,9 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  
+    "rules": {
+      "no-console": "off",  // Desativa a regra `no-console`
+      "react/prop-types": "off"  // Desativa a regra `react/prop-types`
+    }
+  
 }
