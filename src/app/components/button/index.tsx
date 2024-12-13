@@ -1,15 +1,16 @@
 import React from 'react';
 import { ButtonEvent } from '@/app/Types';
-import Link from 'next/link';
 import "./button.scss"
 
-const Button = ({router, name}: ButtonEvent) => {
+const Button = ({ router, name }: ButtonEvent) => {
+    const handleClick = () => {
+        window.location.href = `/${router}.html`, "_blank";
+    };
+
     return (
-    <Link href={`${router}`} target='_blank' rel="noopener noreferrer" >
-        <div className="button">
+        <div className="button" onClick={handleClick}>
             <p>{name}</p>
         </div>
-    </Link>
     );
 }
 

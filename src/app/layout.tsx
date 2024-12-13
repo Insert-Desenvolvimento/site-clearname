@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Nayhara Soares",
-  description: "Institutional Web site from Credit of Nayhara Soares",
+  description: "Nayhara Soares Reabilitação de Crédito",
 };
 
 export default function RootLayout({

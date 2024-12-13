@@ -14,7 +14,7 @@ const Banner: React.FC = () => {
         <div className="contentBox">
           <h1 data-text="Reabilite seu crédito e transforme seu futuro financeiro!" className="slogan">Reabilite seu crédito e transforme seu futuro financeiro!</h1>
           <p className="justifyElement">Especialistas em transformar sua vida financeira com confiança e segurança.</p>
-          <Button router={"/analitic"} name={"Contato"} />
+          <Button router={"analitic"} name={"Contato"} />
         </div>
       </div>
     </div>
