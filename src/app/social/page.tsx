@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
@@ -19,7 +18,7 @@ import img9 from '/public/social/img9.jpeg';
 import img10 from '/public/social/img10.jpeg';
 import img11 from '/public/social/img11.jpeg';
 import img12 from '/public/social/img12.jpeg';
-import logo from '/public/logo.png';
+import logo from '/public/variableImg/logo.png';
 
 const Social: React.FC = () => {
   const images = [
@@ -40,7 +39,7 @@ const Social: React.FC = () => {
   return (
     <div className="social-container">
       <Link href="/" className="back-button">Voltar à Página Principal</Link>
-      <Image src={logo} alt="Logo Nayhara Soares" width={200} className="logo" />
+      <img src={logo.src} alt="Logo Nayhara Soares" width={200} className="logo" />
 
       <header className="header">
         <h1 className="company-name">Nayhara Soares Reabilitação de crédito </h1>
@@ -83,7 +82,7 @@ const Social: React.FC = () => {
             {images.map((img, index) => (
               <SplideSlide key={index}>
                 <div className="slide">
-                  <Image src={img} alt={`Ação social ${index + 1}`} width={600} height={400} />
+                  <img src={img.src} alt={`Ação social ${index + 1}`} width={600} height={400} />
                 </div>
               </SplideSlide>
             ))}

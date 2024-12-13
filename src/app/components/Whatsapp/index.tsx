@@ -28,7 +28,7 @@ const Whatsapp = () => {
   return (
     <div className="whats" style={{ bottom: `${bottomOffset}px` }}>
       <a href='https://wa.me/553299986585?text=Olá! Venho pelo o Site e Tenho interesse em saber mais.' target='_blank' rel="noopener noreferrer">
-        <img src="/whatsapp.png" alt="Icone whatsapp para entrar em contato com a Nayhara Soares" title='Fale com Nayhara Soares' />
+        <img src="/variableImg/whatsapp.png" alt="Icone whatsapp para entrar em contato com a Nayhara Soares" title='Fale com Nayhara Soares' />
       </a>
     </div>
   );

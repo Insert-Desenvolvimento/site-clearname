@@ -1,18 +1,14 @@
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css'; 
-import depo1 from '/public/depoiments/depo1.jpg';
-import depo2 from '/public/depoiments/depo2.jpg';
-import depo3 from '/public/depoiments/depo3.jpg';
-import depo4 from '/public/depoiments/depo4.jpg';
 import DepoimentCard from '../depoimentsCard';
 import './depoiments.scss';
 
 const depoiments = [
-  { image: depo1 },
-  { image: depo2 },
-  { image: depo3 },
-  { image: depo4 },
+  { image: '/depoiments/depo1.jpg' },
+  { image: '/depoiments/depo2.jpg' },
+  { image: '/depoiments/depo3.jpg' },
+  { image: '/depoiments/depo4.jpg' },
 ];
 
 const Depoiments: React.FC = () => {

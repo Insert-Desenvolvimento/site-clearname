@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import logo from "/public/logo.png";
-import Image from "next/image";
+import logo from "/public/variableImg/logo.png";
 import Link from "next/link";
 import "./header.scss";
 import { MenuProps } from "@/app/Types";
@@ -19,7 +18,7 @@ const Header = ({ menuItens }: MenuElements) => {
   return (
     <div className="headerMenu">
       <div className="imglogo">
-        <Image src={logo} alt="Logo" width={50} />
+        <img src={logo.src} alt="Logo" width={50} />
       </div>
       <ul className="headerList">
         {menuItens?.map((item, index) => (

@@ -1,7 +1,6 @@
-import nayharaImg from "/public/nayhara-fundo-preto.jpeg";
+import nayharaImg from "/public/variableImg/nayhara-fundo-preto.jpeg";
 import "./group.scss";
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import Button from "../button";
 import CardAbout from "../CardAbout";
 import '@splidejs/react-splide/css';
@@ -24,9 +23,9 @@ export default function Group() {
       <div className="contentGroup">
         {isClient && (
           <div className="perfilImg">
-            <Image
+            <img
               className="imgItem"
-              src={nayharaImg}
+              src={nayharaImg.src}
               alt="Nayhara Soares posando para foto de perfil"
             />
           </div>

@@ -1,8 +1,7 @@
 'use client';
 
-import Image from "next/image";
 import React from "react";
-import imgSegredos from "/public/segredosScore.jpeg";
+import imgSegredos from "/public/variableImg/segredosScore.jpeg";
 import "./ebook.scss";
 import { redirect } from "next/navigation";
 import Whatsapp from "../components/Whatsapp";
@@ -33,7 +32,7 @@ export default function Ebook() {
             </div>
           </div>
           <div className="ebookImgContainer">
-            <Image src={imgSegredos} alt="Imagem Ebook Segredos do Score" />
+            <img src={imgSegredos.src} alt="Imagem Ebook Segredos do Score" />
           </div>
         </div>
 

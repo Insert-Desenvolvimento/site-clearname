@@ -2,14 +2,13 @@
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-import Image from 'next/image'; 
 
-import renato from '/public/renato.jpg';
-import luana from '/public/luana.jpg';
-import fernanda from '/public/fernanda.jpg';
-import rosemary from '/public/rosemary.jpg';
-import roney from '/public/roney.jpg';
-import alessandra from '/public/alessandra.jpg';
+import renato from '/public/variableImg/renato.jpg';
+import luana from '/public/variableImg/luana.jpg';
+import fernanda from '/public/variableImg/fernanda.jpg';
+import rosemary from '/public/variableImg/rosemary.jpg';
+import roney from '/public/variableImg/roney.jpg';
+import alessandra from '/public/variableImg/alessandra.jpg';
 import "./other.scss"
 
 const OtherSpecialist: React.FC = () => {
@@ -47,7 +46,7 @@ const OtherSpecialist: React.FC = () => {
         {specialists.map((specialist, index) => (
           <SplideSlide key={index}>
             <div className="specialist-item">
-              <Image src={specialist.image} alt={specialist.name} />
+              <img src={specialist.image.src} alt={specialist.name} />
               <div className="caption">
                 <h4>{specialist.name}</h4>
                 <p>{specialist.city}</p>

@@ -1,18 +1,10 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
 
-type Depoiment = {
-  image: StaticImageData;
-};
-
-type DepoimentCardProps = {
-  depoiment: Depoiment;
-};
-
-const DepoimentCard: React.FC<DepoimentCardProps> = ({ depoiment }) => {
+const DepoimentCard = ({ depoiment }: { depoiment: { image: string } }) => {
+  const { image } = depoiment;
   return (
     <div className="depoiment-card">
-      <Image src={depoiment.image} alt="Depoimento" className="depoiment-image" />
+      <img src={image} alt="Depoimento" className="depoiment-image" />
     </div>
   );
 };

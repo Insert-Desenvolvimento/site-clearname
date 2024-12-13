@@ -1,9 +1,9 @@
-import Image from "next/image";
+
 import React from "react";
-import nayharaImg from "/public/nayhara-fundo-preto.jpeg";
-import mateus from "/public/matheus.jpg";
-import irmao from "/public/irmao.jpg";
-import alissonImg from "/public/alisson.jpg"
+import nayharaImg from "/public/variableImg/nayhara-fundo-preto.jpeg";
+import mateus from "/public/variableImg/matheus.jpg";
+import irmao from "/public/variableImg/irmao.jpg";
+import alissonImg from "/public/variableImg/alisson.jpg"
 import "./specialist.scss";
 import OtherSpecialist from "../otherSpecialist";
 
@@ -24,9 +24,9 @@ export default function Specialist() {
         <div className="listSpecialist">
           <div className="cardSpecialist">
             <div className="specialist">
-              <Image
+              <img
                 className="specialist"
-                src={mateus}
+                src={mateus.src}
                 alt="Foto do especialista Mateus"
               />
             </div>
@@ -37,9 +37,9 @@ export default function Specialist() {
           </div>
           <div className="cardSpecialist">
             <div className="specialist">
-              <Image
+              <img
                 className="specialist"
-                src={irmao}
+                src={irmao.src}
                 alt="Foto do especialista Alex Soares"
               />
             </div>
@@ -50,9 +50,9 @@ export default function Specialist() {
           </div>
           <div className="cardSpecialist">
             <div className="specialist">
-              <Image
+              <img
                 className="specialist"
-                src={nayharaImg}
+                src={nayharaImg.src}
                 alt="Foto do especialista Nayhara"
               />
             </div>
@@ -63,9 +63,9 @@ export default function Specialist() {
           </div>
           <div className="cardSpecialist">
             <div className="specialist">
-              <Image
+              <img
                 className="specialist"
-                src={alissonImg}
+                src={alissonImg.src}
                 alt="Foto do especialista Alisson"
               />
             </div>

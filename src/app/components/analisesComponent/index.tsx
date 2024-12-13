@@ -1,19 +1,18 @@
 import React from "react";
 import Button from "../button";
 import "./analise.scss";
-import Image from "next/image";
-import imgElement from "/public/imgSectionAnalises.jpeg";
+import imgElement from "/public/variableImg/imgSectionAnalises.jpeg";
 
 export default function Analises() {
   return (
     <div className="containerAnalises" id="analises">
       <div className="contentElement">
         <div>
-          <Image
-            src={imgElement}
+          <img
+            src={imgElement.src}
             alt="Image references for request analises "
             width={700}
-          ></Image>
+          />
         </div>
         <div className="contentText">
           <h2>

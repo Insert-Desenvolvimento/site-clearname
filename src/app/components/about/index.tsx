@@ -1,6 +1,5 @@
 import "./about.scss"
-import Image from "next/image";
-import logo from "/public/logo.png";
+import logo from "/public/variableImg/logo.png";
 import { useEffect, useState } from "react";
 
 export default function About() {
@@ -39,7 +38,7 @@ export default function About() {
         </div>
         {isClient && (
           <div className="imageAboutContainer">
-            <Image className="logoAbout" src={logo} alt="Logo Image" width={300} />
+            <img className="logoAbout" src={logo.src} alt="Logo Image" width={300} />
           </div>
         )}
       </div>

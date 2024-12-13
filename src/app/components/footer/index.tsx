@@ -1,8 +1,7 @@
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "./footer.scss";
-import Image from "next/image";
-import logo from "/public/logo.png";
+import logo from "/public/variableImg/logo.png";
 import { TbWorldSearch } from "react-icons/tb";
 
 const Footer: React.FC = () => {
@@ -11,9 +10,9 @@ const Footer: React.FC = () => {
       <footer className="footer">
         <div className="footer-content">
           <div className="container-img">
-            <Image
+            <img
               className="content-img"
-              src={logo}
+              src={logo.src}
               alt="Logo da Empresa Nayhara Soares"
             />
           </div>

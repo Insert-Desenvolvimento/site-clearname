@@ -1,8 +1,7 @@
 import React from "react";
 import FormComponent from "../components/formComponent";
 import "./analitic.scss";
-import img from "/public/imgForm.png";
-import Image from "next/image";
+import img from "/public/variableImg/imgForm.png";
 export default function Analitic() {
   return (
     <div className="container">
@@ -22,7 +21,7 @@ export default function Analitic() {
           </section>
         </div>
         <div className="containerLeft">
-          <Image src={img} alt="Imagem ajudamos você"/>
+          <img src={img.src} alt="Imagem ajudamos você"/>
         </div>
       </div>
     </div>

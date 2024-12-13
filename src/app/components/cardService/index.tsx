@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Text } from "@/app/Types";
-import Image from "next/image";
-import IconArrow from "/public/arrowIcon.svg";
+import IconArrow from "/public/variableImg/arrowIcon.svg";
 import "./card.scss";
 
 const CardService = ({ text, icon, paragraph, list }: Text) => {
@@ -14,7 +13,7 @@ const CardService = ({ text, icon, paragraph, list }: Text) => {
   return (
     <div className="card">
       <div className="containerIcons">
-        <Image
+        <img
           src={icon}
           width={25}
           height={25}
@@ -22,8 +21,8 @@ const CardService = ({ text, icon, paragraph, list }: Text) => {
           className="iconElement"
         />
         <button className="toggleButton" onClick={toggleListVisibility}>
-          <Image
-            src={IconArrow}
+          <img
+            src={IconArrow.src}
             width={25}
             height={25}
             alt="Toggle list visibility"

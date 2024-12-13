@@ -1,7 +1,7 @@
-import Image from "next/image";
+
 import React from "react";
 import Button from "../button";
-import imgEbook from "/public/ebook.jpeg";
+import imgEbook from "/public/variableImg/ebook.jpeg";
 import "./ebook.scss";
 
 export default function EbookComponent() {
@@ -30,7 +30,7 @@ Serviço de Execução Direta: Deixe nossa equipe aplicar as estratégias direta
             </div>
           </div>
         </div>
-        <Image src={imgEbook} className="imgEbookContainer" alt="Book image"  />
+        <img src={imgEbook.src} className="imgEbookContainer" alt="Book image"  />
       </div>
     </div>
   );
