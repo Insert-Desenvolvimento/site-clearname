@@ -18,3 +18,7 @@ export interface ButtonEvent {
     router: string,
     name: string
 }
+
+export interface Item {
+    text: string;
+}
