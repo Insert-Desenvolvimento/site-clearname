@@ -19,11 +19,11 @@ export default function Home() {
         <Header
           menuItens={[
             { name: "Home", link: "/" },
-            { name: "Sobre Nós", link: "#about" },
             { name: "Serviços", link: "#services" },
+            { name: "Sobre Nós", link: "#about" },
             { name: "Nossa Equipe", link: "#group" },
             { name: "Análise", link: "#analises" },
-            { name: "Responsabilidade Social", link: "/social" },
+            { name: "Responsabilidade Social", link: "/social.html" },
           ]}
         />
         <Banner />
