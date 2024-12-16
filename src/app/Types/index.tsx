@@ -20,5 +20,5 @@ export interface ButtonEvent {
 }
 
 export interface Item {
-    text: string;
+    text: string;   
 }
