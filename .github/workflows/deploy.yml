@@ -11,8 +11,8 @@ jobs:
 
       - name: Build Next.js project
         run: |
-          pnpm install
-          pnpm build
+          npm install
+          npm run build
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
