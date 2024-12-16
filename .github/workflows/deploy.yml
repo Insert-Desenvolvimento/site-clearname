@@ -1,16 +1,27 @@
 on: push
 name: 🚀 Deploy website on push
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v4
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ${{ secrets.ftp_host }}
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.fpt_password }}
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: Build Next.js project
+        run: |
+          npm install
+          npm run build
+
+      - name: Export static files
+        run: npm run export
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.fpt_password }}
+          local-dir: ./out # Local de arquivos estáticos gerados pelo next export
+          server-dir: /public_html/ # Diretório de deploy no servidor
