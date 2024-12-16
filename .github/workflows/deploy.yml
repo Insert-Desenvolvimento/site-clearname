@@ -1,7 +1,4 @@
-on: 
-  push:
-    branches: 
-      -main
+on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -15,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.ftp_host }}
-        username: ${{ secrets.ftp_user }}
-        password: ${{ secrets.ftp_password }}
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.fpt_password }}
