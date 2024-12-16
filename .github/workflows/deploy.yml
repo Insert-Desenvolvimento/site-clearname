@@ -14,14 +14,11 @@ jobs:
           npm install
           npm run build
 
-      - name: Export static files
-        run: npm run export
-
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.ftp_host }}
           username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.fpt_password }}
-          local-dir: ./out # Local de arquivos estáticos gerados pelo next export
-          server-dir: /public_html/ # Diretório de deploy no servidor
+          password: ${{ secrets.ftp_password }}
+          local-dir: ./out # Local dos arquivos estáticos
+          server-dir: /public_html/ # Diretório no HostGator
