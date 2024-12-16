@@ -21,4 +21,4 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.fpt_password }}
           local-dir: ./out/ # Local do build exportado
-          server-dir: /public_html/ # Diretório no servidor HostGator
+          server-dir: /public_html # Diretório no servidor HostGator
