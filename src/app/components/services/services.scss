@@ -4,7 +4,8 @@
     width: 100%;
     align-items: center;
     margin: 20px auto;
-    justify-content: space-around;
+    gap: 10px;
+    justify-content: space-between;
     @media (max-width:1000px ){
       justify-content: center;
     }

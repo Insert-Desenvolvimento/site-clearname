@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
       </footer>
       <div className="footer-footer">
         <div className="fllatech">
-          <p className="footer-title">Desenvolvido & Mantido por FLLA TECH</p>
+          <p className="footer-title">Desenvolvido & Mantido por FLLATECH</p>
           <div className="contact-item">
             <MdEmail size={16} color="#fff" />
             <a href="mailto:administrativo@fllatech.com">
@@ -73,12 +73,22 @@ const Footer: React.FC = () => {
               fllatech.com
             </a>
           </div>
-          
+          <div className="contact-item">
+            <FaInstagram size={16} color="#fff" />
+            <a
+              href="https://www.instagram.com/fllatech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @fllatech
+            </a>
+          </div>
+
         </div>
         <div className="copy-content">
-            &copy; {new Date().getFullYear()} Nayhara Soares Reabilitação de
-            Crédito. Todos os direitos reservados.
-          </div>
+          &copy; {new Date().getFullYear()} Nayhara Soares Reabilitação de
+          Crédito. Todos os direitos reservados.
+        </div>
       </div>
     </>
   );
